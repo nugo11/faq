@@ -161,6 +161,18 @@ body {
     .faq {
         width: 280px;
         height: auto;
-        padding: 16px 25px 16px 25px;
+        padding: 12px 25px 12px 25px;
       }
 }
+
+@media (height < 700px) and (width < 500px) {
+  .minefaq {
+      margin-top: 100px;
+  }
+  .faq {
+      width: 280px;
+      height: auto;
+      padding: 12px 10px 12px 12px;
+    }
+}
+

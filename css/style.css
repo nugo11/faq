@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap");
+
+body {
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  border-radius: 23px;
+  background: #fff;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.5);
+  display: grid;
+  grid-template-columns: 30% 50%;
+  gap: 20%;
+  width: 60%;
+  height: 55%;
+  position: relative;
+}
+
+.img {
+  background: url(../img/Group\ 2.png) no-repeat;
+  background-size: contain;
+  width: 48%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.minefaq {
+  grid-column-start: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7%;
+}
+
+.minefaq h2 {
+  color: #1e1f36;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.show {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq {
+  width: 80%;
+  border-bottom: 2px solid #e8e8ea;
+  cursor: pointer;
+  transition: 0.5s;;
+}
+
+.faq h1 {
+  color: #4b4c5f;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  transition: 0.5s;
+  padding-bottom: 20px;
+}
+
+.faq span {
+  display: block;
+  background: url(../img/arrow.png) no-repeat;
+  width: 10px;
+  height: 7px;
+  padding-bottom: 20px;
+}
+
+.faq h1:hover {
+  color: #f47b56;
+}
+
+.faq p {
+  color: #787887;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 38px;
+}
+
+@media (width < 1600px) {
+  .container {
+    width: 80%;
+    height: 50%;
+  }
+}
+@media (width < 1100px) {
+  .container {
+    width: 90%;
+    height: 50%;
+  }
+}
+@media (width < 980px) {
+  .container {
+    width: 80%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+  }
+
+  .img {
+    background: url(../img/Group\ 4.png) no-repeat;
+    background-size: cover;
+    width: 240px;
+    height: 205px;
+    top: -100px;
+    left: 40%;
+    transform: translateX(-40%);
+  }
+
+  .minefaq {
+    margin-top: 140px;
+  }
+
+  .minefaq h2 {
+    text-align: center;
+  }
+
+  .faq {
+    width: 370px;
+    height: auto;
+    padding: 16px 25px 16px 25px;
+  }
+
+  .faq p {
+    line-height: 18px;
+  }
+
+  .show {
+    gap: 10px;
+  }
+}
+
+@media (width < 500px) {
+    .faq {
+        width: 300px;
+        height: auto;
+        padding: 16px 25px 16px 25px;
+      }
+}
+
+@media (width < 400px) {
+    .container {
+        height: 80vh;
+    }
+    .faq {
+        width: 280px;
+        height: auto;
+        padding: 16px 25px 16px 25px;
+      }
+}
